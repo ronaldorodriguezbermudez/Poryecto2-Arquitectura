@@ -1,52 +1,52 @@
-globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/node-fetch-native/dist/polyfill.mjs';
+globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/node-fetch-native/dist/polyfill.mjs';
 import { Server } from 'http';
 import { tmpdir } from 'os';
 import { join } from 'path';
 import { mkdirSync } from 'fs';
 import { parentPort, threadId } from 'worker_threads';
-import { provider, isWindows } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/std-env/dist/index.mjs';
-import { createRenderer } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { eventHandler, defineEventHandler, handleCacheHeaders, createEvent, useQuery, useCookie, getQuery, createError, createApp, createRouter, lazyEventHandler } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/h3/dist/index.mjs';
-import devalue from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/@nuxt/devalue/dist/devalue.mjs';
-import { renderToString } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/vue/server-renderer/index.mjs';
-import { parseURL, withQuery, withLeadingSlash, withoutTrailingSlash, joinURL } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/ufo/dist/index.mjs';
-import destr from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/destr/dist/index.mjs';
-import { snakeCase, kebabCase, pascalCase, camelCase } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/scule/dist/index.mjs';
-import { createFetch as createFetch$1, Headers } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/ohmyfetch/dist/node.mjs';
-import { createRouter as createRouter$1 } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/radix3/dist/index.mjs';
-import { createCall, createFetch } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/hookable/dist/index.mjs';
-import { hash } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/ohash/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/unstorage/dist/drivers/fs.mjs';
-import defu from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/defu/dist/defu.mjs';
-import { extname } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/pathe/dist/index.mjs';
-import { unified } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/unified/index.js';
-import { toString } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/mdast-util-to-string/index.js';
-import { preprocess } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/micromark/dev/lib/preprocess.js';
-import { postprocess } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/micromark/dev/lib/postprocess.js';
-import { stringifyPosition } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/unist-util-stringify-position/index.js';
-import { markdownLineEnding, markdownSpace } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/micromark-util-character/dev/index.js';
-import { push, splice } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/micromark-util-chunked/dev/index.js';
-import { resolveAll } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/micromark-util-resolve-all/index.js';
-import remarkEmoji from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/remark-emoji/index.js';
-import rehypeSlug from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/rehype-slug/index.js';
-import remarkSqueezeParagraphs from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/remark-squeeze-paragraphs/index.js';
-import rehypeExternalLinks from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/rehype-external-links/index.js';
-import remarkGfm from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/remark-gfm/index.js';
-import rehypeSortAttributeValues from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/rehype-sort-attribute-values/index.js';
-import rehypeSortAttributes from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/rehype-sort-attributes/index.js';
-import rehypeRaw from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/rehype-raw/index.js';
-import remarkMDC, { parseFrontMatter } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/remark-mdc/dist/index.mjs';
-import remarkParse from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/remark-parse/index.js';
-import remark2rehype from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/remark-rehype/index.js';
-import { all } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/mdast-util-to-hast/index.js';
-import { detab } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/detab/index.js';
-import { u } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/unist-builder/index.js';
-import { encode } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/mdurl/index.js';
-import { position } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/unist-util-position/index.js';
-import htmlTags from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/html-tags/index.js';
-import slugify from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/slugify/slugify.js';
+import { provider, isWindows } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/std-env/dist/index.mjs';
+import { createRenderer } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { eventHandler, defineEventHandler, handleCacheHeaders, createEvent, useQuery, useCookie, getQuery, createError, createApp, createRouter, lazyEventHandler } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/h3/dist/index.mjs';
+import devalue from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/@nuxt/devalue/dist/devalue.mjs';
+import { renderToString } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/vue/server-renderer/index.mjs';
+import { parseURL, withQuery, withLeadingSlash, withoutTrailingSlash, joinURL } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/ufo/dist/index.mjs';
+import destr from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/destr/dist/index.mjs';
+import { snakeCase, kebabCase, pascalCase, camelCase } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/scule/dist/index.mjs';
+import { createFetch as createFetch$1, Headers } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/ohmyfetch/dist/node.mjs';
+import { createRouter as createRouter$1 } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/radix3/dist/index.mjs';
+import { createCall, createFetch } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/hookable/dist/index.mjs';
+import { hash } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/ohash/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/unstorage/dist/drivers/fs.mjs';
+import defu from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/defu/dist/defu.mjs';
+import { extname } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/pathe/dist/index.mjs';
+import { unified } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/unified/index.js';
+import { toString } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/mdast-util-to-string/index.js';
+import { preprocess } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/micromark/dev/lib/preprocess.js';
+import { postprocess } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/micromark/dev/lib/postprocess.js';
+import { stringifyPosition } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/unist-util-stringify-position/index.js';
+import { markdownLineEnding, markdownSpace } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/micromark-util-character/dev/index.js';
+import { push, splice } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/micromark-util-chunked/dev/index.js';
+import { resolveAll } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/micromark-util-resolve-all/index.js';
+import remarkEmoji from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/remark-emoji/index.js';
+import rehypeSlug from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/rehype-slug/index.js';
+import remarkSqueezeParagraphs from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/remark-squeeze-paragraphs/index.js';
+import rehypeExternalLinks from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/rehype-external-links/index.js';
+import remarkGfm from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/remark-gfm/index.js';
+import rehypeSortAttributeValues from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/rehype-sort-attribute-values/index.js';
+import rehypeSortAttributes from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/rehype-sort-attributes/index.js';
+import rehypeRaw from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/rehype-raw/index.js';
+import remarkMDC, { parseFrontMatter } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/remark-mdc/dist/index.mjs';
+import remarkParse from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/remark-parse/index.js';
+import remark2rehype from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/remark-rehype/index.js';
+import { all } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/mdast-util-to-hast/index.js';
+import { detab } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/detab/index.js';
+import { u } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/unist-builder/index.js';
+import { encode } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/mdurl/index.js';
+import { position } from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/unist-util-position/index.js';
+import htmlTags from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/html-tags/index.js';
+import slugify from 'file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/slugify/slugify.js';
 
 const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routes":{},"envPrefix":"NUXT_"},"public":{"content":{"base":"_content","tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"highlight":false,"wsUrl":"ws://localhost:4000/","documentDriven":false}},"content":{"cacheVersion":2,"cacheIntegrity":"cN8Gkpfl2c","transformers":[],"base":"_content","watch":{"ws":{"port":4000,"showURL":false}},"sources":{},"ignores":["\\.","-"],"locales":[],"highlight":false,"markdown":{"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"remarkPlugins":{},"rehypePlugins":{}},"yaml":{},"csv":{"delimeter":",","json":true},"navigation":{"fields":[]},"documentDriven":false}};
 const ENV_PREFIX = "NITRO_";
@@ -105,7 +105,7 @@ function timingMiddleware(_req, res, next) {
   next();
 }
 
-const serverAssets = [{"baseName":"server","dir":"C:/Users/Ronaldo/Documents/GitHub/Poryecto1 Arquitectura/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"C:/Users/Ronaldo/Documents/GitHub/Poryecto2 Arquitectura/server/assets"}];
 
 const assets = createStorage();
 
@@ -119,12 +119,12 @@ const useStorage = () => storage;
 
 storage.mount('/assets', assets);
 
-storage.mount('content:source:content', unstorage_47drivers_47fs({"name":"content:source:content","driver":"fs","base":"C:\\Users\\Ronaldo\\Documents\\GitHub\\Poryecto1 Arquitectura\\content","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache:content', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\Ronaldo\\Documents\\GitHub\\Poryecto1 Arquitectura\\.nuxt\\content-cache","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\Ronaldo\\Documents\\GitHub\\Poryecto1 Arquitectura","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\Ronaldo\\Documents\\GitHub\\Poryecto1 Arquitectura\\server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\Ronaldo\\Documents\\GitHub\\Poryecto1 Arquitectura\\.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\Ronaldo\\Documents\\GitHub\\Poryecto1 Arquitectura\\.nuxt\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('content:source:content', unstorage_47drivers_47fs({"name":"content:source:content","driver":"fs","base":"C:\\Users\\Ronaldo\\Documents\\GitHub\\Poryecto2 Arquitectura\\content","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache:content', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\Ronaldo\\Documents\\GitHub\\Poryecto2 Arquitectura\\.nuxt\\content-cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\Ronaldo\\Documents\\GitHub\\Poryecto2 Arquitectura","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\Ronaldo\\Documents\\GitHub\\Poryecto2 Arquitectura\\server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\Ronaldo\\Documents\\GitHub\\Poryecto2 Arquitectura\\.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\Ronaldo\\Documents\\GitHub\\Poryecto2 Arquitectura\\.nuxt\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
 
 function defineRenderHandler(handler) {
   return eventHandler(async (event) => {
@@ -383,7 +383,7 @@ const errorHandler = (async function errorhandler(error, event) {
   const isErrorPage = event.req.url?.startsWith("/__nuxt_error");
   let html = !isErrorPage ? await $fetch(withQuery("/__nuxt_error", errorObject)).catch(() => null) : null;
   if (!html) {
-    const { template } = await import('file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/@nuxt/ui-templates/dist/templates/error-dev.mjs') ;
+    const { template } = await import('file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/@nuxt/ui-templates/dist/templates/error-dev.mjs') ;
     {
       errorObject.description = errorObject.message;
     }
@@ -1947,7 +1947,7 @@ const json = defineTransformer({
     let parsed;
     if (typeof content === "string") {
       if (_id.endsWith("json5")) {
-        parsed = (await import('file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/node_modules/json5/lib/index.js').then((m) => m.default || m)).parse(content);
+        parsed = (await import('file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/node_modules/json5/lib/index.js').then((m) => m.default || m)).parse(content);
       } else if (_id.endsWith("json")) {
         parsed = destr(content);
       }
@@ -2239,7 +2239,7 @@ const getContentQuery = (event) => {
   return query;
 };
 
-const _V7uIya = defineEventHandler(async (event) => {
+const _SYzPsA = defineEventHandler(async (event) => {
   const query = getContentQuery(event);
   const contents = await serverQueryContent(event, query).find();
   if (query.first && Array.isArray(contents) && contents.length === 0) {
@@ -2255,7 +2255,7 @@ const _V7uIya = defineEventHandler(async (event) => {
   return contents;
 });
 
-const _vBr3mg = defineEventHandler(async (event) => {
+const _fXkxsX = defineEventHandler(async (event) => {
   const now = Date.now();
   await serverQueryContent(event).find();
   await getContentIndex(event);
@@ -2354,7 +2354,7 @@ function isObject(obj) {
   return Object.prototype.toString.call(obj) === "[object Object]";
 }
 
-const _glYeVV = defineEventHandler(async (event) => {
+const _8tnQ1f = defineEventHandler(async (event) => {
   const query = getContentQuery(event);
   if (!isPreview(event) && Object.keys(query).length === 0) {
     const cache = await cacheStorage.getItem("content-navigation.json");
@@ -2383,16 +2383,16 @@ const _glYeVV = defineEventHandler(async (event) => {
   return createNav(contents, configs);
 });
 
-const _lazy_lTzg6P = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_iM7vTf = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/__nuxt_error', handler: _lazy_lTzg6P, lazy: true, middleware: false, method: undefined },
-  { route: '/api/_content/query/:qid', handler: _V7uIya, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/query', handler: _V7uIya, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/cache', handler: _vBr3mg, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation/:qid', handler: _glYeVV, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation', handler: _glYeVV, lazy: false, middleware: false, method: "get" },
-  { route: '/**', handler: _lazy_lTzg6P, lazy: true, middleware: false, method: undefined }
+  { route: '/__nuxt_error', handler: _lazy_iM7vTf, lazy: true, middleware: false, method: undefined },
+  { route: '/api/_content/query/:qid', handler: _SYzPsA, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/query', handler: _SYzPsA, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/cache', handler: _fXkxsX, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation/:qid', handler: _8tnQ1f, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation', handler: _8tnQ1f, lazy: false, middleware: false, method: "get" },
+  { route: '/**', handler: _lazy_iM7vTf, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -2476,8 +2476,8 @@ function publicAssetsURL(...path) {
   return path.length ? joinURL(publicBase, ...path) : publicBase;
 }
 
-const getClientManifest = () => import('file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
-const getServerEntry = () => import('file://C:/Users/Ronaldo/Documents/GitHub/Poryecto1%20Arquitectura/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getClientManifest = () => import('file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getServerEntry = () => import('file://C:/Users/Ronaldo/Documents/GitHub/Poryecto2%20Arquitectura/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
   if (!manifest) {

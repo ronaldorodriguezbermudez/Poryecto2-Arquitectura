@@ -18,7 +18,7 @@
 </template>
 <script setup>
 	const route = useRoute()
-	const { data: designer, refresh } = await useFetch(`https://cms-una.000webhostapp.com/api/content/item/designers2/${route.params.slug}`)
+	const { data: designer, refresh } = await useFetch(`https://cms-una.000webhostapp.com/api/content/item/Designers2/${route.params.slug}`)
 	refresh()
 </script>
 

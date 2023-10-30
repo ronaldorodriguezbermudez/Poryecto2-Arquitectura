@@ -14,5 +14,5 @@
    </div>
   </template>
   <script setup>
-	const { data: designers } = await useFetch(`https://cms-una.000webhostapp.com/api/content/items/designers?fields={"name":true}`)
+	const { data: designers } = await useFetch(`https://cms-una.000webhostapp.com/api/content/items/Designers2?fields={"nombre":true}`)
 </script>
