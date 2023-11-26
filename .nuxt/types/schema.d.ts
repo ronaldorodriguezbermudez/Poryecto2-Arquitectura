@@ -1,175 +1,356 @@
-import { NuxtModule } from '@nuxt/schema'
-declare module '@nuxt/schema' {
+import { NuxtModule, RuntimeConfig } from 'nuxt/schema'
+declare module 'nuxt/schema' {
   interface NuxtConfig {
+    ["mdc"]?: typeof import("@nuxtjs/mdc").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["content"]?: typeof import("@nuxt/content").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["snipcart"]?: typeof import("@nuxtjs/snipcart").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["devtools"]?: typeof import("@nuxt/devtools").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["telemetry"]?: typeof import("@nuxt/telemetry").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    modules?: (undefined | null | false | NuxtModule | string | [NuxtModule | string, Record<string, any>] | ["@nuxtjs/mdc", Exclude<NuxtConfig["mdc"], boolean>] | ["@nuxt/content", Exclude<NuxtConfig["content"], boolean>] | ["@nuxtjs/snipcart", Exclude<NuxtConfig["snipcart"], boolean>] | ["@nuxt/devtools", Exclude<NuxtConfig["devtools"], boolean>] | ["@nuxt/telemetry", Exclude<NuxtConfig["telemetry"], boolean>])[],
   }
   interface RuntimeConfig {
-     app: {
-        baseURL: string,
+   app: {
+      baseURL: string,
 
-        buildAssetsDir: string,
+      buildAssetsDir: string,
 
-        cdnURL: string,
-    },
+      cdnURL: string,
+   },
 
-    content: {
-        cacheVersion: number,
+   mdc: {
+      highlight: any,
+   },
 
-        cacheIntegrity: string,
+   content: {
+      cacheVersion: number,
 
-        transformers: Array<any>,
+      cacheIntegrity: string,
 
-        base: string,
+      transformers: Array<any>,
 
-        watch: {
-             ws: {
-                   port: number,
+      base: string,
 
-                   showURL: boolean,
-             },
-        },
+      api: {
+         baseURL: string,
+      },
 
-        sources: any,
+      watch: {
+         ws: {
+            port: {
+               port: number,
 
-        ignores: Array<string>,
+               portRange: Array<number>,
+            },
 
-        locales: Array<any>,
+            hostname: string,
 
-        defaultLocale: any,
+            showURL: boolean,
+         },
+      },
 
-        highlight: boolean,
+      sources: any,
 
-        markdown: {
-             tags: {
-                   p: string,
+      ignores: Array<any>,
 
-                   a: string,
+      locales: Array<any>,
 
-                   blockquote: string,
+      defaultLocale: any,
 
-                   "code-inline": string,
+      highlight: boolean,
 
-                   code: string,
+      markdown: {
+         tags: {
+            p: string,
 
-                   em: string,
+            a: string,
 
-                   h1: string,
+            blockquote: string,
 
-                   h2: string,
+            "code-inline": string,
 
-                   h3: string,
+            code: string,
 
-                   h4: string,
+            em: string,
 
-                   h5: string,
+            h1: string,
 
-                   h6: string,
+            h2: string,
 
-                   hr: string,
+            h3: string,
 
-                   img: string,
+            h4: string,
 
-                   ul: string,
+            h5: string,
 
-                   ol: string,
+            h6: string,
 
-                   li: string,
+            hr: string,
 
-                   strong: string,
+            img: string,
 
-                   table: string,
+            ul: string,
 
-                   thead: string,
+            ol: string,
 
-                   tbody: string,
+            li: string,
 
-                   td: string,
+            strong: string,
 
-                   th: string,
+            table: string,
 
-                   tr: string,
-             },
+            thead: string,
 
-             remarkPlugins: any,
+            tbody: string,
 
-             rehypePlugins: any,
-        },
+            td: string,
 
-        yaml: any,
+            th: string,
 
-        csv: {
-             delimeter: string,
+            tr: string,
+         },
 
-             json: boolean,
-        },
+         anchorLinks: {
+            depth: number,
 
-        navigation: {
-             fields: Array<any>,
-        },
+            exclude: Array<number>,
+         },
 
-        documentDriven: boolean,
-    },
+         remarkPlugins: any,
+
+         rehypePlugins: any,
+      },
+
+      yaml: any,
+
+      csv: {
+         delimeter: string,
+
+         json: boolean,
+      },
+
+      navigation: {
+         fields: Array<any>,
+      },
+
+      contentHead: boolean,
+
+      documentDriven: boolean,
+
+      respectPathCase: boolean,
+
+      experimental: {
+         clientDB: boolean,
+
+         stripQueryParameters: boolean,
+
+         advanceQuery: boolean,
+
+         search: any,
+      },
+   },
   }
   interface PublicRuntimeConfig {
-     content: {
-        base: string,
+   mdc: {
+      components: {
+         prose: boolean,
 
-        tags: {
-             p: string,
+         map: {
+            p: string,
 
-             a: string,
+            a: string,
 
-             blockquote: string,
+            blockquote: string,
 
-             "code-inline": string,
+            "code-inline": string,
 
-             code: string,
+            code: string,
 
-             em: string,
+            em: string,
 
-             h1: string,
+            h1: string,
 
-             h2: string,
+            h2: string,
 
-             h3: string,
+            h3: string,
 
-             h4: string,
+            h4: string,
 
-             h5: string,
+            h5: string,
 
-             h6: string,
+            h6: string,
 
-             hr: string,
+            hr: string,
 
-             img: string,
+            img: string,
 
-             ul: string,
+            ul: string,
 
-             ol: string,
+            ol: string,
 
-             li: string,
+            li: string,
 
-             strong: string,
+            strong: string,
 
-             table: string,
+            table: string,
 
-             thead: string,
+            thead: string,
 
-             tbody: string,
+            tbody: string,
 
-             td: string,
+            td: string,
 
-             th: string,
+            th: string,
 
-             tr: string,
-        },
+            tr: string,
+         },
+      },
 
-        highlight: boolean,
+      headings: {
+         anchorLinks: {
+            h1: boolean,
 
-        wsUrl: string,
+            h2: boolean,
 
-        documentDriven: boolean,
-    },
+            h3: boolean,
+
+            h4: boolean,
+
+            h5: boolean,
+
+            h6: boolean,
+         },
+      },
+   },
+
+   content: {
+      locales: Array<any>,
+
+      defaultLocale: any,
+
+      integrity: any,
+
+      experimental: {
+         stripQueryParameters: boolean,
+
+         advanceQuery: boolean,
+
+         clientDB: boolean,
+      },
+
+      respectPathCase: boolean,
+
+      api: {
+         baseURL: string,
+      },
+
+      navigation: {
+         fields: Array<any>,
+      },
+
+      tags: {
+         p: string,
+
+         a: string,
+
+         blockquote: string,
+
+         "code-inline": string,
+
+         code: string,
+
+         em: string,
+
+         h1: string,
+
+         h2: string,
+
+         h3: string,
+
+         h4: string,
+
+         h5: string,
+
+         h6: string,
+
+         hr: string,
+
+         img: string,
+
+         ul: string,
+
+         ol: string,
+
+         li: string,
+
+         strong: string,
+
+         table: string,
+
+         thead: string,
+
+         tbody: string,
+
+         td: string,
+
+         th: string,
+
+         tr: string,
+      },
+
+      highlight: boolean,
+
+      wsUrl: string,
+
+      documentDriven: boolean,
+
+      host: string,
+
+      trailingSlash: boolean,
+
+      search: any,
+
+      contentHead: boolean,
+
+      anchorLinks: {
+         depth: number,
+
+         exclude: Array<number>,
+      },
+   },
+
+   snipcart: {
+      version: string,
+
+      publicApiKey: string,
+
+      timeoutDuration: number,
+
+      domain: string,
+
+      protocol: string,
+
+      loadCSS: boolean,
+
+      loadStrategy: string,
+
+      addProductBehavior: string,
+
+      modalStyle: string,
+
+      language: string,
+
+      templatesUrl: string,
+
+      currency: string,
+
+      subscription: boolean,
+
+      translations: any,
+   },
   }
 }
+declare module 'vue' {
+        interface ComponentCustomProperties {
+          $config: RuntimeConfig
+        }
+      }

@@ -1,8 +1,9 @@
-import { defineNuxtConfig } from 'nuxt'
+import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
-    modules: ['@nuxt/content'],
-		app: {
+    modules: ['@nuxt/content','@nuxtjs/snipcart'],
+	  snipcart: {publicApiKey: 'Njc0MjUwYWEtODU5YS00MDM4LWJkMjEtNmIyMzU1MWE1NmQwNjM4MzU3NjExMDAzMTQwMjYy'},
+    app: {
     head: {
       meta: [
         { charset: 'utf-8' },

@@ -8,6 +8,6 @@
       Designer</NuxtLink>
     <NuxtLink class="three columns button button-primary" to="/manufacturers_index">
       Manufacturers</NuxtLink>
-
+      
   </div>
 </template>
